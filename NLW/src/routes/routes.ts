@@ -1,6 +1,9 @@
 import { Router } from 'express';
+import {routes as settingsRoute} from '../routes/SettingsRoute'
 
 const routes = Router();
+
+routes.use(settingsRoute)
 
 routes.get("/", (req, res) => {
   return res.json({
@@ -8,10 +11,6 @@ routes.get("/", (req, res) => {
   });
 });
 
-routes.post("/usuarios", (req, res) => {
-  return res.json({
-    message: "Usuário salvo com sucesso!"
-  });
-});
 
-export default routes;
+
+export { routes };
