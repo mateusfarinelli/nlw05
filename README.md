@@ -64,7 +64,13 @@
 
 
 - Conteúdo da aula 03
-  - Em breve
+  - Continuando a configuranção e a escrita do código relacionado ao banco de dados
+  - Services
+    - É uma camada a mais e que fica responsavel por realizar a regra de negócio, ou seja, nosso controller faz a chamada do método dentro do service e ele é quem faz as requisições
+  - Criação da migration Users
+  - Criação da migration Messages e o relacionamento com Users (veja o arquivo migrations/User para ver como criar uma FK, e o relacionamento é adicionado no arquivo de entidade no caso etities/Message).
+  - Para fazer um inner join basta utilizar o parametro "relations" dentro do service, onde o get foi realizado (veja src/services/MessagesService)
+  - Passando as chamadas ao repositório para dentro do constructor, parecido com uma DI no angular.
 
 - Conteúdo da aula 04
   - Em breve
